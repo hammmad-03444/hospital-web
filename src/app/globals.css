@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.background-home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1
+}
+@media (max-width: 800px) {
+ .main{
+  padding-left: 1%;
+  padding-right: 1%;
+ }
+ 
+}
+
+@media(max-width:500px) {
+  .heading{
+    font-size:x-large;
+   }
+}
+/* @media (min-width: 700px) and (max-width: 1020px) {
+  .main {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+} */
+/* Custom styles for react-slick dots */
+.slick-dots li button:before {
+  font-size: 12px;  /* Increase the font size for boldness effect */
+  color: #000;      /* Change color as needed */
+  opacity: 1;       /* Set opacity to make the dots more visible */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;      /* Set color for active dot */
+  font-size: 14px;  /* Make active dot even larger for emphasis */
+}
+
+@media (max-width:500px){
+.container .cards{
+  display: flex;
+  flex-direction: column !important;
+
+ }
+}
+@media(max-width:765px){
+.service  .rightsidewala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
